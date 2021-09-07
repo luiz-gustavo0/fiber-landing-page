@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "styles.scss",
+        "abstracts/_variables.scss",
+        "base/_base.scss",
+        "base/_typography.scss",
+        "base/_utilities.scss",
+        "layout/_header.scss",
+        "layout/_footer.scss",
+        "pages/_home.scss",
+        "pages/_signup.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
