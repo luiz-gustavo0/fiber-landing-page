@@ -1,0 +1,195 @@
+.container-signup {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  padding: 0 2rem;
+
+  display: flex;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+.form-container {
+  width: 50%;
+  padding: 2.5rem 0;
+  color: $color-black;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.logo-signup {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.form {
+  margin-top: 6rem;
+  max-width: 46rem;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    margin-top: 5rem;
+  }
+
+  &__heading {
+    font-size: 3.6rem;
+    margin-bottom: 5rem;
+
+    @media (max-width: 425px) {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+
+    label,
+    input {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: inherit;
+    }
+
+    input {
+      height: 5rem;
+      padding: 1rem 2rem;
+      border: 1px solid $color-gray-light;
+      border-radius: 0.5rem;
+      transition: all 0.2s;
+
+      &:hover,
+      &:focus {
+        border-color: $color-primary;
+      }
+
+      &::placeholder {
+        font-size: 1.6rem;
+        font-family: inherit;
+        font-weight: 400;
+        color: #a9a9a9c7;
+      }
+    }
+
+    input[type='password'] {
+      background: url('/Assets/hide\ password.svg') no-repeat center right;
+      background-position-x: calc(100% - 1.6rem);
+    }
+
+    @media (max-width: 425px) {
+      label,
+      input {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 3rem;
+
+    input[type='checkbox'] {
+      width: 2.4rem;
+      height: 1.8rem;
+      border-color: $color-gray-light;
+    }
+  }
+
+  &__terms-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    a {
+      display: inline-block;
+      color: $color-primary;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+
+  @media (max-width: 425px) {
+    &__terms-text,
+    &__text {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.info-container {
+  width: 50%;
+  background: $color-primary;
+  padding: 10rem 2rem 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.carrousel {
+  max-width: 50rem;
+  margin: auto;
+  color: #fff;
+
+  &__heading {
+    font-size: 3.6rem;
+    margin-top: 4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  &__paragraph {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      margin-left: -5rem;
+    }
+
+    span::before {
+      display: block;
+      content: '';
+      width: 15px;
+      height: 15px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 25px 0 0 #a587ff, 50px 0 0 #a587ff, 75px 0 0 #a587ff;
+    }
+  }
+}

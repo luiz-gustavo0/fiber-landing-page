@@ -1,1 +1,301 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #5e5e5e;
+}
+
+.btn {
+  width: 100%;
+  background: #4d13d1;
+  min-height: 5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: #4110b1;
+}
+
+.btn--large {
+  height: 5.8rem;
+}
+
+.container-signup {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container-signup {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0;
+  }
+}
+
+.form-container {
+  width: 50%;
+  padding: 2.5rem 0;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 100%;
+  }
+}
+
+.logo-signup {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.form {
+  margin-top: 6rem;
+  max-width: 46rem;
+}
+
+@media (max-width: 768px) {
+  .form {
+    max-width: 100%;
+    margin-top: 5rem;
+  }
+}
+
+.form__heading {
+  font-size: 3.6rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 425px) {
+  .form__heading {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.form__group label,
+.form__group input {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: inherit;
+}
+
+.form__group input {
+  height: 5rem;
+  padding: 1rem 2rem;
+  border: 1px solid #ececec;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.form__group input:hover, .form__group input:focus {
+  border-color: #4d13d1;
+}
+
+.form__group input::-webkit-input-placeholder {
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 400;
+  color: #a9a9a9c7;
+}
+
+.form__group input:-ms-input-placeholder {
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 400;
+  color: #a9a9a9c7;
+}
+
+.form__group input::-ms-input-placeholder {
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 400;
+  color: #a9a9a9c7;
+}
+
+.form__group input::placeholder {
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 400;
+  color: #a9a9a9c7;
+}
+
+.form__group input[type='password'] {
+  background: url("/Assets/hide password.svg") no-repeat center right;
+  background-position-x: calc(100% - 1.6rem);
+}
+
+@media (max-width: 425px) {
+  .form__group label,
+  .form__group input {
+    font-size: 1.6rem;
+  }
+}
+
+.form__terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.form__terms input[type='checkbox'] {
+  width: 2.4rem;
+  height: 1.8rem;
+  border-color: #ececec;
+}
+
+.form__terms-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.form__terms-text a {
+  display: inline-block;
+  color: #4d13d1;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid #4d13d1;
+}
+
+.form__text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.form__text a {
+  text-decoration: none;
+  color: #4d13d1;
+}
+
+@media (max-width: 425px) {
+  .form__terms-text, .form__text {
+    font-size: 1.6rem;
+  }
+}
+
+.info-container {
+  width: 50%;
+  background: #4d13d1;
+  padding: 10rem 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    display: none;
+  }
+}
+
+.carrousel {
+  max-width: 50rem;
+  margin: auto;
+  color: #fff;
+}
+
+.carrousel__heading {
+  font-size: 3.6rem;
+  margin-top: 4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.carrousel__paragraph {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.carrousel__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carrousel__control span {
+  margin-left: -5rem;
+}
+
+.carrousel__control span::before {
+  display: block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 25px 0 0 #a587ff, 50px 0 0 #a587ff, 75px 0 0 #a587ff;
+          box-shadow: 25px 0 0 #a587ff, 50px 0 0 #a587ff, 75px 0 0 #a587ff;
+}
+/*# sourceMappingURL=styles.css.map */
