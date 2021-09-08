@@ -1,7 +1,36 @@
+# Fiber Landing Page - Challenge Codewell
 
-# Welcome to Codewell! 👋
+<p>
+<img src='Assets/snap-signup.png'/>
+<p>
 
-Codewell's aim is to provide you with real-world design templates that you can use to practice your HTML and CSS projects. 
+## Tecnologias utilizadas
+
+- HTML
+- CSS / SASS
+- JAVASCRIPT
+
+## Como baixar o projeto
+
+### Clonar o repositório
+
+```
+git@github.com:luiz-gustavo0/fiber-landing-page.git
+```
+
+### Entrar no diretório
+
+```
+cd fiber-landing-page
+```
+
+## Author
+
+[@luiz-gustavo0](https://www.linkedin.com/in/luiz-gustavo0/)
+
+<!-- # Welcome to Codewell! 👋
+
+Codewell's aim is to provide you with real-world design templates that you can use to practice your HTML and CSS projects.
 
 Free or paid, all templates are high quality and will make great portfolio pieces.
 
@@ -22,9 +51,8 @@ Enter all the title, Github repo URL, Live URL (Netlify or GH Pages), and tell t
 
 ### Join our community on Slack
 
-If you want more real-time communication, you can visit our community on [Slack](https://join.slack.com/t/codewell-hq/shared_invite/zt-ni8c9g8h-gNYWrmqQ3Uh37dcLg9~LMQ). 
+If you want more real-time communication, you can visit our community on [Slack](https://join.slack.com/t/codewell-hq/shared_invite/zt-ni8c9g8h-gNYWrmqQ3Uh37dcLg9~LMQ).
 
 ### Fonts Used
 
-https://fonts.google.com/specimen/Inter
-
+https://fonts.google.com/specimen/Inter -->
