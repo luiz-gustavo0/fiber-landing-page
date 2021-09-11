@@ -14,18 +14,26 @@
     background-color: $color-primary-dark;
   }
 
+  &:link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 1.2rem 1rem;
+  }
+
+  &--medium {
+    max-width: 15rem;
+  }
+
   &--large {
     height: 5.8rem;
     font-size: 1.8rem;
+    max-width: 100%;
   }
 
-  &--link {
-    display: inline-block;
-    text-decoration: none;
-    min-height: auto;
-    padding: 1.2rem 1rem;
-    width: 10rem;
-    text-align: center;
+  &--signup {
+    max-width: 10rem;
   }
 
   &--menu {

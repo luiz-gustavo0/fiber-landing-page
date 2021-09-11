@@ -48,18 +48,32 @@ body {
   background-color: #4110b1;
 }
 
+.btn:link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  padding: 1.2rem 1rem;
+}
+
+.btn--medium {
+  max-width: 15rem;
+}
+
 .btn--large {
   height: 5.8rem;
   font-size: 1.8rem;
+  max-width: 100%;
 }
 
-.btn--link {
-  display: inline-block;
-  text-decoration: none;
-  min-height: auto;
-  padding: 1.2rem 1rem;
-  width: 10rem;
-  text-align: center;
+.btn--signup {
+  max-width: 10rem;
 }
 
 .btn--menu {
@@ -201,6 +215,7 @@ body {
 
 .header__btn-group .link-signin {
   display: inline-block;
+  width: 9rem;
   padding: 0.5rem;
   text-decoration: none;
   color: #000;
@@ -211,6 +226,182 @@ body {
 
 .header__btn-group .link-signin:hover {
   color: #4d13d1;
+}
+
+.hero {
+  background-color: #fbf8f3;
+  font-size: 1.6rem;
+}
+
+.hero__container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .hero__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0 2rem 6rem;
+  }
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 42%;
+}
+
+.hero__content .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero__content .rate__group-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.hero__content .rate__description {
+  color: #000;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero__content .rate {
+    display: none;
+  }
+}
+
+.hero__content .info__heading {
+  font-size: 4.6rem;
+  color: #000;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .hero__content .info__heading {
+    font-size: 3.2rem;
+  }
+}
+
+.hero__content .info__paragraph {
+  margin-bottom: 2rem;
+}
+
+.hero__content .info__btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero__content .info__btn-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  .hero__content .info__btn-group > .btn--medium {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.hero__content .info__link {
+  font-weight: 700;
+}
+
+.hero__content .info__checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.hero__content .info__checked span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.hero__content .info__checked span img {
+  max-width: 1.6rem;
+}
+
+@media (max-width: 768px) {
+  .hero__content .info__checked {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__content {
+    max-width: 100%;
+  }
+}
+
+.hero__ilustration {
+  width: 100%;
+  max-width: 58%;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .hero__ilustration {
+    max-width: 100%;
+    height: auto;
+  }
+  .hero__ilustration img {
+    margin-top: -1rem;
+  }
 }
 
 .container-signup {
