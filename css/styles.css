@@ -34,7 +34,7 @@ body {
   width: 100%;
   background: #4d13d1;
   min-height: 5rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #fff;
   border: none;
@@ -45,11 +45,172 @@ body {
 }
 
 .btn:hover {
-  background: #4110b1;
+  background-color: #4110b1;
 }
 
 .btn--large {
   height: 5.8rem;
+  font-size: 1.8rem;
+}
+
+.btn--link {
+  display: inline-block;
+  text-decoration: none;
+  min-height: auto;
+  padding: 1.2rem 1rem;
+  width: 10rem;
+  text-align: center;
+}
+
+.btn--menu {
+  display: none;
+  background: url("/Assets/Hamburger Menu.svg") no-repeat center center;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.btn--menu:hover, .btn--menu:focus, .btn--menu:active {
+  background-color: transparent;
+  border: 1px solid #4d13d1;
+}
+
+@media (max-width: 960px) {
+  .btn--menu {
+    display: block;
+  }
+}
+
+.header {
+  min-height: 8rem;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.header__container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30rem;
+}
+
+.header__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.header__menu ul a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__menu ul a:hover {
+  color: #4d13d1;
+}
+
+@media (max-width: 960px) {
+  .header__menu {
+    display: none;
+  }
+  .header__menu.active {
+    background-color: #ececec;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3rem;
+    top: 8rem;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    height: calc(100vh - 8rem);
+    z-index: 1000;
+  }
+  .header__menu.active ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    margin: 4rem 0 3rem;
+  }
+  .header__menu.active .header__btn-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.header__btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.header__btn-group .link-signin {
+  display: inline-block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__btn-group .link-signin:hover {
+  color: #4d13d1;
 }
 
 .container-signup {

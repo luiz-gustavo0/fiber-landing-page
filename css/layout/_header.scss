@@ -1,0 +1,97 @@
+.header {
+  min-height: 8rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-weight: 700;
+    font-size: 2rem;
+    color: $color-black;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 30rem;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      list-style: none;
+
+      a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: $color-black;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+
+    @media (max-width: 960px) {
+      display: none;
+      &.active {
+        background-color: $color-gray-light;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+
+        gap: 3rem;
+        top: 8rem;
+        left: 0;
+        right: 0;
+        padding: 2rem;
+        height: calc(100vh - 8rem);
+        z-index: 1000;
+
+        ul {
+          flex-direction: column;
+          gap: 2rem;
+          margin: 4rem 0 3rem;
+        }
+
+        & .header__btn-group {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  &__btn-group {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    .link-signin {
+      display: inline-block;
+      padding: 0.5rem;
+      text-decoration: none;
+      color: $color-black;
+      font-weight: 600;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}

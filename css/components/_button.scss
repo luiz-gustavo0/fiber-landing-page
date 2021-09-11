@@ -2,7 +2,7 @@
   width: 100%;
   background: $color-primary;
   min-height: 5rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #fff;
   border: none;
@@ -11,10 +11,40 @@
   transition: all 0.2s;
 
   &:hover {
-    background: $color-primary-dark;
+    background-color: $color-primary-dark;
   }
 
   &--large {
     height: 5.8rem;
+    font-size: 1.8rem;
+  }
+
+  &--link {
+    display: inline-block;
+    text-decoration: none;
+    min-height: auto;
+    padding: 1.2rem 1rem;
+    width: 10rem;
+    text-align: center;
+  }
+
+  &--menu {
+    display: none;
+    background: url('/Assets/Hamburger\ Menu.svg') no-repeat center center;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+      border: 1px solid $color-primary;
+    }
+
+    @media (max-width: 960px) {
+      display: block;
+    }
   }
 }
