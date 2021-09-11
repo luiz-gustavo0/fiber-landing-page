@@ -54,10 +54,7 @@ body {
 
 .container-signup {
   width: 100%;
-  max-width: 120rem;
-  margin: 0 auto;
   min-height: 100vh;
-  padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,17 +67,23 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 0;
   }
 }
 
 .form-container {
   width: 50%;
-  padding: 2.5rem 0;
+  padding: 2.5rem 2rem;
   color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -90,8 +93,16 @@ body {
 }
 
 .logo-signup {
+  width: 100%;
+  max-width: 46rem;
   font-size: 2rem;
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .logo-signup {
+    max-width: 100%;
+  }
 }
 
 .form {
@@ -242,6 +253,16 @@ body {
   width: 50%;
   background: #4d13d1;
   padding: 10rem 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -252,7 +273,6 @@ body {
 
 .carrousel {
   max-width: 50rem;
-  margin: auto;
   color: #fff;
 }
 
@@ -270,6 +290,7 @@ body {
   font-weight: 400;
   margin-bottom: 1.5rem;
   text-align: center;
+  color: #d9cdfc;
 }
 
 .carrousel__control {
