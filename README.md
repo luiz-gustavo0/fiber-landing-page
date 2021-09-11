@@ -1,7 +1,7 @@
 # Fiber Landing Page - Challenge Codewell
 
 <p>
-<img src='Assets/snapshot-signup.png'/>
+<img src='Assets/hero-fiber.png'/>
 <p>
 
 ## Tecnologias utilizadas
