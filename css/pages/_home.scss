@@ -1,11 +1,6 @@
 .hero {
   background-color: $color-terciary;
   font-size: 1.6rem;
-  // padding: 6rem 0;
-
-  // @media (max-width: 768px) {
-  //   padding: 0 2rem;
-  // }
 
   &__container {
     max-width: 120rem;
@@ -127,6 +122,205 @@
       img {
         margin-top: -1rem;
       }
+    }
+  }
+}
+
+.about {
+  padding: 6rem 0;
+
+  &__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
+
+.services {
+  font-size: 1.6rem;
+  margin-bottom: 6rem;
+  &__header {
+    width: 100%;
+    max-width: 40%;
+    padding: 2rem 0 3rem;
+
+    @media (max-width: 600px) {
+      max-width: 100%;
+    }
+
+    span {
+      display: inline-block;
+      color: $color-primary;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+      color: $color-black;
+    }
+  }
+
+  &__card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &__card {
+    padding: 1rem 0;
+    width: 100%;
+    max-width: 34rem;
+    img {
+      max-width: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    h5 {
+      color: $color-black;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 425px) {
+      max-width: 100%;
+    }
+  }
+}
+
+.baner {
+  color: #fff;
+  padding: 0 2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+
+  &__container {
+    border-radius: 0.5rem;
+    background: $color-primary;
+  }
+
+  &__content {
+    padding: 4rem 4rem 0rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
+
+  &__info {
+    max-width: 43rem;
+    font-size: 1.6rem;
+    h2 {
+      font-size: 3.6rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+
+      h2 {
+        font-size: 2.8rem;
+      }
+    }
+
+    @media (max-width: 425px) {
+      & .btn--white {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    max-width: 60rem;
+
+    align-self: flex-end;
+    margin-bottom: -0.2rem;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.cards__container {
+  max-width: 120rem;
+  margin: 6rem auto 0;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+}
+
+.card {
+  border: 1px solid #f2f2f2;
+  border-radius: 0.5rem;
+  color: $color-black;
+  font-size: 1.4rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 38rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__avatar {
+    max-width: 4rem;
+  }
+
+  &__avatar-name,
+  &__button {
+    color: $color-primary;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  &__avatar-name:hover {
+    text-decoration: underline;
+  }
+
+  &__content {
+    margin-bottom: 2rem;
+
+    p {
+      line-height: 2rem;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    padding: 1.3rem 1.5rem;
+    border-radius: 0.3rem;
+
+    &:hover {
+      border-color: $color-primary;
     }
   }
 }

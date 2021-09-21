@@ -36,6 +36,17 @@
     max-width: 10rem;
   }
 
+  &--white {
+    background: #fff;
+    color: $color-primary;
+    max-width: 15rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: $color-gray-light;
+    }
+  }
+
   &--menu {
     display: none;
     background: url('/Assets/Hamburger\ Menu.svg') no-repeat center center;
