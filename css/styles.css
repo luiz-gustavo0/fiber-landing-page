@@ -90,7 +90,7 @@ body {
 
 .btn--menu {
   display: none;
-  background: url("/Assets/Hamburger Menu.svg") no-repeat center center;
+  background: url("/Assets/Hamburger-Menu.svg") no-repeat center center;
   width: 5rem;
   height: 5rem;
   border: none;
