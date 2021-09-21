@@ -90,17 +90,21 @@ body {
 
 .btn--menu {
   display: none;
-  background: url("/Assets/Hamburger-Menu.svg") no-repeat center center;
-  width: 5rem;
-  height: 5rem;
+  background: none;
+  width: 3.2rem;
+  height: 2.4rem;
   border: none;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
-.btn--menu:hover, .btn--menu:focus, .btn--menu:active {
-  background-color: transparent;
-  border: 1px solid #4d13d1;
+.btn--menu:hover {
+  background: transparent;
+}
+
+.btn--menu:focus, .btn--menu:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 @media (max-width: 960px) {
